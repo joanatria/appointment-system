@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+    body{
+        height: 100vh;
+        background: #f6f5f7;
+        place-content: center;
+    }
+
+    #navbar{
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        z-index: 9999;
+        width:100vw;
+        height:100px;
+        background-size: cover;
+      }
+      
+      #footbar{
+        position: fixed; 
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        z-index: 10000;
+      }  
+
+      nav{
+        width: 100vw;
+        height: 50px;
+        background-color: #0094d4;
+        line-height: 50px;
+      }
+
+      nav ul{
+        margin-right: 5vw;
+        margin-left: 5vw;
+      }
+      nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        transition: 0.7s all;
+      }
+
+      nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        padding: 30px;
+      }
+
+    .profile-container{
+        position: relative;
+        margin-top: 3%;
+        width: 100vw;
+        height: 95vh;
+        background-color: #fff;
+    }
+
+    .overlay-text-img {
+      position: absolute;
+      top: 45%; 
+      left: 30%; 
+      transform: translate(-50%, -50%); 
+      color: #000000; 
+      padding: 10px 20px; 
+      font-size: 20px; 
+      text-align: left;
+}
+
+.editing-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: #000;
+  z-index: 1;
+  overflow: auto;
+  background: #f6f6f6;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.step-card {
+  flex: 1;
+  background: #fff;
+  border: none;
+  padding: 0px;
+  text-align: center;
+  margin: 0px;
+}
+
+.step-card h3 {
+  margin-top: 20px;
+  color: #0094d4;
+}
+
+.step-card p {
+  color: #333;
+}
+
+.docinfos {
+    margin-top: 22vh;
+}
+.docheader {
+    margin-left: .8vw;
+}
+
+.p-steps {
+  width: 63vw;
+  margin-top: -3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-steps {
+  display: flex;
+  justify-content: center;
+  max-width: 70vw;
+}
+
+.edit-card {
+  flex: 1;
+  background: #fff;
+  border: none;
+  padding-left: 30px;
+  text-align: start;
+}
+
+.container-card {
+  background:#fff;
+  border: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+}
+
+.app-steps {
+  display: flex;
+  justify-content: space-between;
+  background:#f6f6f6;
+}
+
+.profile-card {
+  flex: 1;
+  background: #fff;
+  border: none;
+  padding: 0px;
+  margin: 20px;
+}
+
+.appointment-card {
+  flex: 1;
+  background:#f6f6f6;
+  border: none;
+  padding: 0px;
+  margin: 20px;
+  max-width: fit-content;
+}
+
+.appointment-card h1 {
+  margin-top: 24px;
+  color: #0094d4;
+}
+
+
+.profile-card h1 {
+  margin-top: 24px;
+  color: #0094d4;
+}
+
+.profile-card h3 {
+  margin-top: 20px;
+  color: #0094d4;
+}
+
+.profile-card h5 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.profile-card p {
+  color: #333;
+}
+
+.profile-card b {
+  color: #888888;
+}
+
+.profile-infield{
+  position: relative;
+  width: 15vw;
+}
+
+
+.notifications label {
+  display: flex;
+  padding-right: 10px;
+  padding-left: 22px;
+  text-indent: -22px;
+}
+.notifications input {
+  vertical-align: middle;
+}
+.notifications label span {
+  vertical-align: middle;
+  color: #333;
+  font-size: 16px; 
+}
+
+.number{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #0094d4;
+  text-align: center;
+  line-height: 30px;
+}
+
+h1{
+  color: #0094d4;
+}
+
+.parentelement {
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 480px; */
+
+}
+
+/* .doctorprofilecontainer {
+    margin-top: 100px;
+} */
+.columns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vh;
+}
+
+#columnprofileicon {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+    position: fixed;
+    width: 18vw;
+    height: 770px;
+    border-radius: 20px;
+    margin: 42vh 5vh;
+    box-shadow: -1px 8px 24px -12px rgba(0,0,0,0.66);
+    -webkit-box-shadow: -1px 8px 24px -12px rgba(0,0,0,0.66);
+    -moz-box-shadow: -1px 8px 24px -12px rgba(0,0,0,0.66);
+}
+
+#columnprofileicon1 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+  position: fixed;
+  width: 18vw;
+  height: 770px;
+  border-radius: 20px;
+  margin: 42vh 5vh;
+}
+
+.backgroundpop {
+    height: 350px;
+    width: 500px;
+    background-image: linear-gradient(to right, #98daf8, #0094d4);
+    margin-bottom: -140px;
+}
+
+.backgroundpopuser {
+  height: 65px;
+  width: 85vhpx;
+  background-image: linear-gradient(to right, #98daf8, #0094d4);
+  margin-bottom: -140px;
+}
+
+.doctorprofileicon img{
+    margin-top: -180px;
+    width: 320px;
+    height: 320px;
+}
+.doctorprofilename p {
+    font-size: 20px;
+    margin-top: 2vh;
+    margin-bottom: -15px;
+}
+
+#columnprofileinformation {
+    justify-content: flex-start;
+    align-items: start;
+    margin-top: 40vh;
+    margin-left: 23vw;
+    margin-bottom: -5vh;
+}
+
+#columnprofiledoctor {
+  justify-content: flex-start;
+  align-items: start;
+  margin-top: 40vh;
+  margin-left: 23vw;
+  margin-bottom: -5vh;
+}
+
+.doctorprofilecontent {
+    width: 55vw;
+}
+
+.doctoruserprofilecontent {
+  width: 72vw;
+}
+
+.doctorprofilecontenttitles p {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+
+.contentcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.contentrow {
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.personicon {
+    transform: scale(2);
+ }
+ 
+
+
+.dataname {
+    margin-top: -20px;
+    margin-bottom: -40px;
+    color: #333;
+}
+
+.datainfo {
+    font-size: 25px;
+}
+.mydoctorprofileaccount {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 2vh;
+    height: 220px;
+    border-radius: 20px;
+    box-shadow: -1px 8px 24px -12px rgba(0,0,0,0.66);
+    -webkit-box-shadow: -1px 8px 24px -12px rgba(0,0,0,0.66);
+    -moz-box-shadow: -1px 8px 24px -12px rgba(0,0,0,0.66);
+}
+
+.mydoctorprofileaccount .backgroundpop {
+    width: 60vw;
+    height: 7vh;
+    
+}
+
+.mydoctorprofilepersonal {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 2vh;
+    height: 420px;
+    border-radius: 20px;
+    box-shadow: -1px 8px 24px -12px rgba(0,0,0,0.66);
+    -webkit-box-shadow: -1px 8px 24px -12px rgba(0,0,0,0.66);
+    -moz-box-shadow: -1px 8px 24px -12px rgba(0,0,0,0.66);
+}
+
+.mydoctorprofilepersonal .backgroundpop {
+    width: 60vw;
+    height: 7vh;
+    
+}
+
+.mydoctorprofilecredentials {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 2vh;
+    height: 290px;
+    border-radius: 20px;
+    box-shadow: -1px 8px 24px -12px rgba(0,0,0,0.66);
+    -webkit-box-shadow: -1px 8px 24px -12px rgba(0,0,0,0.66);
+    -moz-box-shadow: -1px 8px 24px -12px rgba(0,0,0,0.66);
+}
+
+.mydoctorprofilecredentials .backgroundpop {
+    width: 60vw;
+    height: 7vh;
+    
+}
+
+.mydoctorprofilesecretary {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    height: 310px;
+    border-radius: 20px;
+    box-shadow: -1px 8px 24px -12px rgba(0,0,0,0.66);
+    -webkit-box-shadow: -1px 8px 24px -12px rgba(0,0,0,0.66);
+    -moz-box-shadow: -1px 8px 24px -12px rgba(0,0,0,0.66);
+}
+
+.mydoctorprofilesecretary .backgroundpop {
+    width: 60vw;
+    height: 7vh;
+    
+}
+
+
+#columnprofileappointments {
+    margin-top: 385px;
+    margin-left: 1.5vw;
+    width: 19vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.doctorappoinmentcard {
+    width: 19vw;
+    min-height:400px;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -1px 8px 24px -12px rgba(0,0,0,0.66);
+    -webkit-box-shadow: -1px 8px 24px -12px rgba(0,0,0,0.66);
+    -moz-box-shadow: -1px 8px 24px -12px rgba(0,0,0,0.66);
+}
+
+.doctorappoinmentcard .backgroundpop {
+    width: 19vw;
+    max-height: 70px;
+    margin-bottom: 5px;
+}
+
+.titleappointment {
+    display: flex;
+    justify-content: center;
+}
+.titleappointment p{
+    /* margin-left: 20px; */
+    font-size: 30px;
+}
+
+.listofdocprofilecontent ul{
+    list-style-type: none;
+}
+
+.doctorcalendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected {
+  border: 2px solid blue;
+}
+
+.avatar-selection img{
+  max-width: 150px; 
+  max-height: 150px;
+}
+
+.avatar-item img {
+  max-width: 150px; 
+  max-height: 150px; 
+}
+
+.avatar-selection-popup {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  max-width: 1200px;
+  max-height: 800px;
+}
+
+.avatar-selection-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar-selection-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.avatar-item {
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.avatar-item.selected {
+  border: 2px solid blue;
+  padding: 5px;
+}
+
+/* styles.css */
+.profile-list {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-list li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-list li a:hover {
+  color: #007bff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.section {
+  opacity: 0; /* Initially hide the sections */
+}
+
+.section.active {
+  animation: fadeIn 0.5s ease-in-out forwards; /* Apply the fadeIn animation when the section becomes active */
+}
